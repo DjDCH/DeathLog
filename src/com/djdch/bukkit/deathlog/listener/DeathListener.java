@@ -58,8 +58,6 @@ public class DeathListener extends EntityListener {
                 EntityDamageEvent lastDamageEvent = player.getLastDamageCause();
                 DamageCause cause = lastDamageEvent.getCause();
 
-                // logger.info("Cause: " + cause.name());
-
                 if (lastDamageEvent instanceof EntityDamageByEntityEvent) {
                     EntityDamageByEntityEvent lastDamageByEntityEvent = (EntityDamageByEntityEvent) lastDamageEvent;
                     Entity damager = lastDamageByEntityEvent.getDamager();
