@@ -29,7 +29,7 @@ public class DeathLog extends JavaPlugin {
      * Method execute when the plugin is enable.
      */
     public void onEnable() {
-        this.logger.setPrefix(getDescription().getName());
+        this.logger.setName(getDescription().getName());
 
         // Register the plugin events
         PluginManager pm = getServer().getPluginManager();
