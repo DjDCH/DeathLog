@@ -1,4 +1,4 @@
-package com.djdch.bukkit.utils;
+package com.djdch.bukkit.util;
 
 /**
  * Class who wrap the Minecraft Logger instance.
