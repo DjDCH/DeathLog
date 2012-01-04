@@ -1,0 +1,9 @@
+DeathLog - Version 0.1
+----------------------------
+    * First release
+    * Build with Bukkit #855
+    * Tested with CraftBukkit #1185
+    
+    Major features changes
+    -----------------------
+    * Add death messages in the server console/log

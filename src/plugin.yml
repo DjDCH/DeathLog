@@ -1,0 +1,6 @@
+name: DeathLog
+description: Show death messages in the server console/log.
+author: DjDCH
+main: com.djdch.bukkit.deathlog.DeathLog
+version: 0.1
+website: https://redmine.djdch.com/projects/list_files/deathlog
