@@ -1,8 +1,8 @@
 DeathLog - Version 0.1
 ----------------------------
     * First release
-    * Build with Bukkit #855
-    * Tested with CraftBukkit #1185
+    * Build with Bukkit #1073
+    * Tested with CraftBukkit #1597
     
     Major features changes
     -----------------------
