@@ -117,7 +117,7 @@ public class DeathListener extends EntityListener {
             if (!msg.isEmpty()) {
                 Location location = player.getLocation();
 
-                logger.info(msg + " ([" + location.getWorld().getName() + "] " + ((int) location.getX()) + ", " + ((int) location.getY()) + ", " + ((int) location.getZ()) + ")");
+                this.logger.info(msg + " ([" + location.getWorld().getName() + "] " + ((int) location.getX()) + ", " + ((int) location.getY()) + ", " + ((int) location.getZ()) + ")");
             }
         }
     }

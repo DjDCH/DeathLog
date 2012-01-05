@@ -35,14 +35,14 @@ public class DeathLog extends JavaPlugin {
         PluginManager pm = getServer().getPluginManager();
         pm.registerEvent(Event.Type.ENTITY_DEATH, deathListener, Event.Priority.Monitor, this);
 
-        logger.info("Version " + getDescription().getVersion() + " enable");
+        this.logger.info("Version " + getDescription().getVersion() + " enable");
     }
 
     /**
      * Method execute when the plugin is disable.
      */
     public void onDisable() {
-        logger.info("Version " + getDescription().getVersion() + " disable");
+        this.logger.info("Version " + getDescription().getVersion() + " disable");
     }
 
     /**
