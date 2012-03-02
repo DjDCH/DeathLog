@@ -1,5 +1,7 @@
 package com.djdch.bukkit.deathlog.listener;
 
+import java.util.logging.Logger;
+
 import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
@@ -15,7 +17,6 @@ import org.bukkit.event.entity.EntityDeathEvent;
 import org.bukkit.event.entity.EntityListener;
 
 import com.djdch.bukkit.deathlog.DeathLog;
-import com.djdch.bukkit.util.Logger;
 
 /**
  * Class who listen for any player death.
