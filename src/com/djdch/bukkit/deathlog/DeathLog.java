@@ -2,8 +2,6 @@ package com.djdch.bukkit.deathlog;
 
 import java.util.logging.Logger;
 
-import org.bukkit.event.Event;
-import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import com.djdch.bukkit.deathlog.listener.DeathListener;
@@ -32,9 +30,7 @@ public class DeathLog extends JavaPlugin {
     public void onEnable() {
         this.logger = this.getLogger();
 
-        // Register the plugin events
-        PluginManager pm = getServer().getPluginManager();
-        pm.registerEvent(Event.Type.ENTITY_DEATH, deathListener, Event.Priority.Monitor, this);
+        this.getServer().getPluginManager().registerEvents(this.deathListener, this);
     }
 
     /**

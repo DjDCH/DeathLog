@@ -9,12 +9,14 @@ import org.bukkit.entity.Entity;
 import org.bukkit.entity.LivingEntity;
 import org.bukkit.entity.Player;
 import org.bukkit.entity.Skeleton;
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.EventPriority;
+import org.bukkit.event.Listener;
 import org.bukkit.event.entity.EntityDamageByBlockEvent;
 import org.bukkit.event.entity.EntityDamageByEntityEvent;
 import org.bukkit.event.entity.EntityDamageEvent;
 import org.bukkit.event.entity.EntityDamageEvent.DamageCause;
 import org.bukkit.event.entity.EntityDeathEvent;
-import org.bukkit.event.entity.EntityListener;
 
 import com.djdch.bukkit.deathlog.DeathLog;
 
@@ -23,7 +25,7 @@ import com.djdch.bukkit.deathlog.DeathLog;
  * 
  * @author DjDCH
  */
-public class DeathListener extends EntityListener {
+public class DeathListener implements Listener {
     /**
      * Contains the DeathLog instance.
      */
@@ -49,6 +51,7 @@ public class DeathListener extends EntityListener {
      * 
      * @param event Contains the EntityDeathEvent instance.
      */
+    @EventHandler(priority = EventPriority.MONITOR)
     public void onEntityDeath(EntityDeathEvent event) {
         String msg = "";
 
