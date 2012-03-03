@@ -5,10 +5,10 @@ import java.util.logging.Logger;
 import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
+import org.bukkit.entity.Arrow;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.LivingEntity;
 import org.bukkit.entity.Player;
-import org.bukkit.entity.Skeleton;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
@@ -61,10 +61,10 @@ public class DeathListener implements Listener {
                     EntityDamageByEntityEvent lastDamageByEntityEvent = (EntityDamageByEntityEvent) lastDamageEvent;
                     Entity damager = lastDamageByEntityEvent.getDamager();
 
-                    if (damager instanceof Skeleton) {
-                        LivingEntity livingEntity = (LivingEntity) damager;
+                    if (damager instanceof Arrow) {
+                        Arrow arrow = (Arrow) damager;
 
-                        msg = name + " was shot by " + getNameFromLivingEntity(livingEntity);
+                        msg = name + " was shot by " + getNameFromLivingEntity(arrow.getShooter());
                     } else if (cause.equals(DamageCause.ENTITY_EXPLOSION)) {
                         msg = name + " blew up";
                     } else if (damager instanceof LivingEntity) {
