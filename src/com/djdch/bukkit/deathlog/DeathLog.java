@@ -22,13 +22,14 @@ public class DeathLog extends JavaPlugin {
     /**
      * Contains the deathListener instance.
      */
-    protected final DeathListener deathListener = new DeathListener(this);
+    protected DeathListener deathListener;
 
     /**
      * Method execute when the plugin is enable.
      */
     public void onEnable() {
         this.logger = this.getLogger();
+        this.deathListener = new DeathListener(this);
 
         this.getServer().getPluginManager().registerEvents(this.deathListener, this);
     }
@@ -37,5 +38,14 @@ public class DeathLog extends JavaPlugin {
      * Method execute when the plugin is disable.
      */
     public void onDisable() {
+    }
+
+    /**
+     * Accessor who return the plugin logger instance.
+     * 
+     * @return Logger instance.
+     */
+    public Logger getPluginLogger() {
+        return this.logger;
     }
 }

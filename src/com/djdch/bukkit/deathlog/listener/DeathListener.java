@@ -27,11 +27,6 @@ import com.djdch.bukkit.deathlog.DeathLog;
  */
 public class DeathListener implements Listener {
     /**
-     * Contains the DeathLog instance.
-     */
-    protected DeathLog deathlog;
-
-    /**
      * Contains the Logger instance.
      */
     protected final Logger logger;
@@ -42,8 +37,7 @@ public class DeathListener implements Listener {
      * @param deathlog Contains the DeathLog instance.
      */
     public DeathListener(DeathLog deathlog) {
-        this.deathlog = deathlog;
-        this.logger = deathlog.getLogger();
+        this.logger = deathlog.getPluginLogger();
     }
 
     /**
