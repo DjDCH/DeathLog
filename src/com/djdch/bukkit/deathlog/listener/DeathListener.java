@@ -104,6 +104,8 @@ public class DeathListener implements Listener {
                         msg = name + " starved to death";
                     } else if (cause.equals(DamageCause.FALL)) {
                         msg = name + " hit the ground too hard";
+                    } else if (cause.equals(DamageCause.MAGIC)) {
+                        msg = name + " was killed by magic";
                     } else {
                         msg = name + " died 'EntityDamageEvent'";
                     }
