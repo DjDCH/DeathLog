@@ -1,3 +1,18 @@
+DeathLog - Version 0.1.1
+----------------------------
+    * Build with Bukkit #1360
+    * Tested with CraftBukkit #1988
+    
+    Bug fixes/development issues
+    -----------------------------
+    * Fixed code for the Bukkit version 1.1-R6
+    * Switched to the new event system
+    * Switched to the native tagged logging
+    
+    Known bugs
+    -----------
+    * Message "Player was killed by Player" is not implemented
+
 DeathLog - Version 0.1
 ----------------------------
     * First release
